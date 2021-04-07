@@ -1,0 +1,8 @@
+<h2>ngIf & ngFor</h2>
+<p>Shows ngIf and ngFor. Contains also click event!</p>
+<button *ngIf="!isListVisible" (click)="changeListVisibility()">Show List</button>
+<button *ngIf="isListVisible" (click)="changeListVisibility()">Hide List</button>
+<div *ngIf="isListVisible">
+  <p *ngFor="let name of names">{{ name }}</p>
+</div>
+<hr>
